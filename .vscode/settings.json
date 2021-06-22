@@ -1,0 +1,34 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.history": true
+  },
+  "explorerExclude.backup": {},
+  "taskExplorer.exclude": [
+    "**/.vscode-test/**",
+    "**/bin/**",
+    "**/build/**",
+    "**/CompiledOutput/**",
+    "**/dist/**",
+    "**/doc/**",
+    "**/ext/**",
+    "**/out/**",
+    "**/output/**",
+    "**/packages/**",
+    "**/release/**",
+    "**/releases/**",
+    "**/samples/**",
+    "**/sdks/**",
+    "**/static/**",
+    "**/target/**",
+    "**/test/**",
+    "**/third_party/**",
+    "**/vendor/**",
+    "**/work/**",
+    "**/.devcontainer/**"
+  ]
+}

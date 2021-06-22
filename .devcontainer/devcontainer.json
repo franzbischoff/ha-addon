@@ -1,0 +1,41 @@
+{
+  "name": "Home Assistant Add-Ons",
+  "context": "..",
+  "dockerFile": "Dockerfile",
+  "appPort": [
+    "7123:8123",
+    "7357:4357"
+  ], // http://localhost:7123/
+  "postStartCommand": "service docker start",
+  "runArgs": [
+    "-e",
+    "GIT_EDITOR=code --wait",
+    "--privileged"
+  ],
+  "containerEnv": {
+    "WORKSPACE_DIRECTORY": "${containerWorkspaceFolder}"
+  },
+  "extensions": [
+	"timonwong.shellcheck",
+	"esbenp.prettier-vscode",
+	"lukas-tr.materialdesignicons-intellisense",
+	"ms-azuretools.vscode-docker",
+	"dbaeumer.vscode-eslint",
+	"ms-vscode.vscode-typescript-tslint-plugin",
+	"visualstudioexptteam.vscodeintellicode",
+	"spywhere.guides",
+	"editorconfig.editorconfig",
+	"donjayamanne.git-extension-pack"
+],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.windows": {
+      "bash": {
+        "path": "/bin/bash"
+      }
+    },
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.tabs.focusMode": "singleClick"
+  }
+}
